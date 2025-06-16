@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard - L.B.H. Construction</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+    h1 {
+      color: #004aad;
+    }
+    .logout {
+      float: right;
+      background: red;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+    .content {
+      margin-top: 40px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+    }
+  </style>
+</head>
+<body onload="checkAuth()">
+  <button class="logout" onclick="logout()">Logout</button>
+  <h1>Welcome to Admin Dashboard</h1>
+
+  <div class="content">
+    <h2>Work Records</h2>
+    <p>Yahan par aap apne projects ka details rakh sakte ho.</p>
+    <ul>
+      <li>Project 1: Road Construction near Karad Bus Stand</li>
+      <li>Project 2: Residential Building in Malkapur</li>
+      <li>Project 3: Government School Renovation - Ongoing</li>
+    </ul>
+  </div>
+
+  <script>
+    function checkAuth() {
+      if (sessionStorage.getItem("auth") !== "yes") {
+        alert("Access denied. Please login as admin.");
+        window.location.href = "admin.html";
+      }
+    }
+
+    function logout() {
+      sessionStorage.removeItem("auth");
+      window.location.href = "admin.html";
+    }
+  </script>
+</body>
+</html>

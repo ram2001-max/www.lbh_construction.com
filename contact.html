@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us - L.B.H. Construction</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+    }
+    header, footer {
+      background: #004aad;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+    nav {
+      background: #00336b;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    section {
+      padding: 20px;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 0 10px #ccc;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background: #004aad;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .contact-info {
+      text-align: center;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Contact Us</h1>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="#">Services</a>
+  <a href="contact.html">Contact</a>
+  <a href="admin.html">Admin</a>
+</nav>
+
+<section>
+  <form onsubmit="alert('Your message has been sent!'); return false;">
+    <h2>Send Us a Message</h2>
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="tel" name="phone" placeholder="Phone Number" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+
+  <div class="contact-info">
+    <h3>Or Contact Directly:</h3>
+    <p><strong>Phone:</strong> +91-7387242730</p>
+    <p><strong>Address:</strong> Karad, Maharashtra, India</p>
+    <p><strong>Email:</strong> lbhconstructionkarad@email.com</p>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 L.B.H. Construction. All rights reserved.
+</footer>
+
+</body>
+</html>
